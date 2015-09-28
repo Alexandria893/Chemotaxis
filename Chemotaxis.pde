@@ -4,7 +4,7 @@ Bacteria [] colony;
  {     
 	size(500,500);
 	background(0);
-	colony = new Bacteria [3];
+	colony = new Bacteria [300];
 	  for(int i = 0; i < colony.length;i++)
 	  {
 	    colony[i] = new Bacteria(250,250);
@@ -16,6 +16,7 @@ Bacteria [] colony;
  //move and show the bacteria  
  void draw()   
  {    
+ 	background(127);
  	for (int i=0; i<colony.length; i++) 
  	{ 	colony[i].move();
  		colony[i].show();
@@ -35,13 +36,15 @@ Bacteria [] colony;
 	//make a random walk for this
 	void move()
 	 {
-	 	myX = myX + (int)(Math.random()*3-1);
+	 	myX = myX + (int)(Math.random()*3)-1;
+	 	myY = myY + (int)(Math.random()*3)-1;
 	 }
 	 
 	void show()
-	{
-		fill(0,230,0);
-		ellipse(myX,myY,10,10);
+	{  
+		stroke(0,57,247);
+		fill(0,255,0);
+		ellipse(myX,myY,random(10),random(10));
 	}
 
 }    
