@@ -8,7 +8,6 @@ Bacteria [] colony;
 	  for(int i = 0; i < colony.length;i++)
 	  {
 	    colony[i] = new Bacteria(250,250);
-	    System.out.println(colony[i]);
 	  }
  }
 //initialize bacteria variables here   
