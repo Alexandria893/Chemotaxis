@@ -4,7 +4,6 @@ Bacteria [] colony;
  {     
 	size(500,500);
 	background(0,0,0);
-	frameRate(500);
 	colony = new Bacteria [300];
 	  for(int i = 0; i < colony.length;i++)
 	  {
